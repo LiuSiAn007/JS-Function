@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aleri</title>
+    <script>
+    function palindrome(message){
+    // wirte your code herevar flag = true;
+            message += "";
+            var len = message.length-1;
+            for(var i=0;i<len;i++,len--){
+                if(message.charAt(i) !== message.charAt(len)){
+                    return false;
+                }
+            }
+            return true;
+    }
+    console.log('hello is palindrome :', palindrome('hello') );
+    console.log('abcba is palindrome :', palindrome('abcba') );
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
